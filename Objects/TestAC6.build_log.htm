@@ -1,0 +1,209 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: thang le, non, LIC=21EWF-6Z18Y-Y7TRW-Q8G5U-2GW9C-R97JR
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.28.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
+Dialog DLL:      TCM.DLL V1.36.2.0
+ 
+<h2>Project:</h2>
+C:\Data\STM32_And_VS\thang2\STM32_P\STM32F30x\Projects\VSM_Driver_Final_V1\VSM_Driver_Final_V1.uvprojx
+Project File Date:  11/09/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling stm32f30x_it.c...
+SysTick_Delay.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+User_GPIO.h(62): warning:  #1295-D: Deprecated declaration GPIO_ADC_Init - give arg types
+  void GPIO_ADC_Init();
+User_GPIO.h(63): warning:  #1295-D: Deprecated declaration GPIO_IO_Init - give arg types
+  void GPIO_IO_Init();
+User_GPIO.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif /* __USER_GPIO_H */
+UART_function.h(19): warning:  #1295-D: Deprecated declaration USARTx_Init - give arg types
+  void USARTx_Init();
+Circuler_Buffer.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif 
+stm32f30x_it.c(84): warning:  #177-D: variable "i"  was declared but never referenced
+  	 static unsigned char i = 0;
+stm32f30x_it.c(85): warning:  #177-D: variable "Start_count"  was declared but never referenced
+  	 static unsigned char Start_count = 0;
+stm32f30x_it.c(110): warning:  #177-D: variable "Arr"  was declared but never referenced
+  		char Arr[7];
+stm32f30x_it.c(136): warning:  #1-D: last line of file ends without a newline
+  }
+stm32f30x_it.c: 10 warnings, 0 errors
+compiling UART_function.c...
+SysTick_Delay.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+Circuler_Buffer.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif 
+User_GPIO.h(62): warning:  #1295-D: Deprecated declaration GPIO_ADC_Init - give arg types
+  void GPIO_ADC_Init();
+User_GPIO.h(63): warning:  #1295-D: Deprecated declaration GPIO_IO_Init - give arg types
+  void GPIO_IO_Init();
+User_GPIO.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif /* __USER_GPIO_H */
+UART_function.h(19): warning:  #1295-D: Deprecated declaration USARTx_Init - give arg types
+  void USARTx_Init();
+UART_function.c(124): warning:  #1-D: last line of file ends without a newline
+  }
+UART_function.c: 7 warnings, 0 errors
+compiling main.c...
+SysTick_Delay.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+User_GPIO.h(62): warning:  #1295-D: Deprecated declaration GPIO_ADC_Init - give arg types
+  void GPIO_ADC_Init();
+User_GPIO.h(63): warning:  #1295-D: Deprecated declaration GPIO_IO_Init - give arg types
+  void GPIO_IO_Init();
+User_GPIO.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif /* __USER_GPIO_H */
+UART_function.h(19): warning:  #1295-D: Deprecated declaration USARTx_Init - give arg types
+  void USARTx_Init();
+Circuler_Buffer.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif 
+main.c(466): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  		if(Circular_Buffer_Get(&Buff, &Data) && (!cmd_MesDone))
+main.c(955): warning:  #186-D: pointless comparison of unsigned integer with zero
+  					if((0x00 <= And2Con[cmd_Code1]) && (And2Con[cmd_Code1]) <= 0x50)
+main.c(1162): warning:  #550-D: variable "drop"  was set but never used
+  							unsigned char drop = 0;
+main.c(1182): warning:  #550-D: variable "drop"  was set but never used
+  							unsigned char drop = 0;
+main.c(989): warning:  #177-D: variable "NoDrop"  was declared but never referenced
+  				static bool NoDrop = false;
+main.c(1323): warning:  #177-D: variable "sum"  was declared but never referenced
+  					static unsigned long sum = 0;
+main.c(267): warning:  #550-D: variable "GPIO_led_init"  was set but never used
+  	GPIO_InitTypeDef GPIO_led_init;
+main.c(303): warning:  #177-D: variable "Display"  was declared but never referenced
+  	char Display[20];
+main.c(310): warning:  #177-D: variable "time_active_avai"  was declared but never referenced
+  	int time_active_avai = 5;  // chu ky dinh san theo phut
+main.c(311): warning:  #177-D: variable "time_rest_avai"  was declared but never referenced
+  	int time_rest_avai = 5;
+main.c(312): warning:  #550-D: variable "time_active_require"  was set but never used
+  	int time_active_require = 5;  // chu ky yeu cau theo phut
+main.c(313): warning:  #550-D: variable "time_rest_require"  was set but never used
+  	int time_rest_require = 5;
+main.c(315): warning:  #177-D: variable "time_temp_active"  was declared but never referenced
+  	int time_temp_active = 10; // chu ky dinh san theo phut
+main.c(316): warning:  #177-D: variable "time_temp_rest"  was declared but never referenced
+  	int time_temp_rest = 10;
+main.c(317): warning:  #550-D: variable "temp_require"  was set but never used
+  	int temp_require;
+main.c(319): warning:  #550-D: variable "active"  was set but never used
+  	int active = 0;
+main.c(320): warning:  #177-D: variable "sum"  was declared but never referenced
+  	float sum = 0;
+main.c(321): warning:  #177-D: variable "sum1"  was declared but never referenced
+  	double sum1 = 0;
+main.c(322): warning:  #177-D: variable "Voltage_1"  was declared but never referenced
+  	double Voltage_1 = 0;
+main.c(323): warning:  #177-D: variable "Voltage_2"  was declared but never referenced
+  	double Voltage_2 = 0;
+main.c(324): warning:  #177-D: variable "Vol_R0"  was declared but never referenced
+  	double Vol_R0 = 0; 
+main.c(325): warning:  #177-D: variable "Divide_R0"  was declared but never referenced
+  	double Divide_R0 = 0;
+main.c(326): warning:  #177-D: variable "Rx"  was declared but never referenced
+  	double Rx = 0;
+main.c(327): warning:  #177-D: variable "A_NTC"  was declared but never referenced
+  	double A_NTC = 1.009249522e-03;
+main.c(328): warning:  #177-D: variable "B_NTC"  was declared but never referenced
+  	double B_NTC = 2.378405444e-04;
+main.c(329): warning:  #177-D: variable "C_NTC"  was declared but never referenced
+  	double C_NTC = 2.019202697e-07;
+main.c(330): warning:  #177-D: variable "T1"  was declared but never referenced
+  	double T1 = 0;
+main.c(331): warning:  #177-D: variable "T2"  was declared but never referenced
+  	double T2 = 0;
+main.c: 34 warnings, 0 errors
+compiling User_GPIO.c...
+SysTick_Delay.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+User_GPIO.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif /* __USER_GPIO_H */
+UART_function.h(19): warning:  #1295-D: Deprecated declaration USARTx_Init - give arg types
+  void USARTx_Init();
+Circuler_Buffer.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif 
+User_GPIO.h(62): warning:  #1295-D: Deprecated declaration GPIO_ADC_Init - give arg types
+  void GPIO_ADC_Init();
+User_GPIO.h(63): warning:  #1295-D: Deprecated declaration GPIO_IO_Init - give arg types
+  void GPIO_IO_Init();
+User_GPIO.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif /* __USER_GPIO_H */
+User_GPIO.c(7): warning:  #177-D: variable "EXTI_InitStruct"  was declared but never referenced
+  	EXTI_InitTypeDef EXTI_InitStruct;
+User_GPIO.c(8): warning:  #177-D: variable "NVIC_InitStruct"  was declared but never referenced
+  	NVIC_InitTypeDef NVIC_InitStruct;
+User_GPIO.c: 9 warnings, 0 errors
+compiling ADC_function.c...
+SysTick_Delay.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+User_GPIO.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif /* __USER_GPIO_H */
+UART_function.h(19): warning:  #1295-D: Deprecated declaration USARTx_Init - give arg types
+  void USARTx_Init();
+Circuler_Buffer.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif 
+User_GPIO.h(62): warning:  #1295-D: Deprecated declaration GPIO_ADC_Init - give arg types
+  void GPIO_ADC_Init();
+User_GPIO.h(63): warning:  #1295-D: Deprecated declaration GPIO_IO_Init - give arg types
+  void GPIO_IO_Init();
+User_GPIO.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif /* __USER_GPIO_H */
+ADC_function.c(62): warning:  #550-D: variable "ADC_Interrupt_Struct"  was set but never used
+  	NVIC_InitTypeDef ADC_Interrupt_Struct;
+ADC_function.c(207): warning:  #1-D: last line of file ends without a newline
+  }
+ADC_function.c(142): warning:  #177-D: variable "ADC_Interrupt_Struct"  was declared but never referenced
+  	NVIC_InitTypeDef ADC_Interrupt_Struct;
+ADC_function.c: 10 warnings, 0 errors
+linking...
+Program Size: Code=10940 RO-data=552 RW-data=184 ZI-data=1432  
+FromELF: creating hex file...
+".\Objects\TestAC6.axf" - 0 Error(s), 70 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F3xx_DFP.2.1.0.pack
+                Keil.STM32F3xx_DFP.2.1.0
+                STMicroelectronics STM32F3 Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+Build Time Elapsed:  00:00:07
+</pre>
+</body>
+</html>
